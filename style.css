@@ -1,0 +1,141 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(233, 47%, 7%);
+}
+
+#box{
+    width: 75%;
+    height: 400px;
+    display: flex;
+    margin-top: 8%;
+    border: none;
+    border-radius: 10px;
+    flex-direction: row;
+    background-color: hsl(244, 38%, 16%);
+}
+
+#img-content{
+    width: 150%;
+    background: url(./images/image-header-desktop.jpg);
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    position: relative;
+    height: 100%;
+}
+
+#capa{
+    background: hsla(277, 73%, 54%, 0.4);
+    width: 100%;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#text-content{
+    padding: 30px 80px 0 60px;
+}
+
+#text-content h2{
+    color:hsl(0, 0%, 100%);
+    font-size: 35px;
+    font-family: 'Lexend Deca', sans-serif;;
+    font-weight: 700;
+}
+
+#text-content p{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color:hsla(0, 0%, 100%, 0.75);
+    text-align: left;
+    font-weight: 400;
+}
+
+#stats-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px 0 0;
+}
+
+.text-stats{
+    color:hsla(0, 0%, 100%, 0.6);
+    font-size: 12px;
+}
+
+.number-stats{
+    font-family: 'inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 55px;
+    color:hsl(0, 0%, 100%);
+    margin-bottom: 5px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 80px;
+    color: white;
+}
+.attribution a { color: hsl(209, 100%, 50%); text-decoration: none;}
+
+@media (max-width:500px){
+    #box{
+        flex-direction: column-reverse;
+        width: 90%;
+        height: 90%;
+        text-align: center;
+    }
+
+    #img-content{
+        width: 320px;
+        background: url(./images/image-header-desktop.jpg) no-repeat;
+        border-top-right-radius:10px;
+        border-top-left-radius:10px;
+        border-bottom-right-radius:0px;
+        position: relative;
+        height: 150px;
+    }
+    #capa{
+        border-top-right-radius:10px;
+        border-top-left-radius:10px;
+        border-bottom-right-radius:0px;
+    }
+
+    .stats{
+        margin: 0 20px 0 0 ;
+    }
+
+    #text-content{
+        padding: 20px;
+    }
+
+    #text-content h2{
+        font-size: 20px;
+    }
+
+    #text-content p{
+        text-align: center;
+        line-height: 20px;
+    }
+
+    #stats-box{
+        flex-direction: column;
+    }
+    .number-stats{
+        margin-top: 30px;
+    }
+
+    .attribution{
+        margin-top: 25px;
+    }
+}
